@@ -1,0 +1,54 @@
+
+h1{
+    color: blueviolet;
+}
+
+.grid{
+    margin:auto;
+    margin-top: 5%;
+    width:fit-content;
+    background-image: linear-gradient(to bottom right, white,#E9E4F0);
+}
+input[type=text],[type=number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.enter{
+    width: 50%;
+    background-color: #ddd6f3;
+    margin: 20px 90px;
+    padding: 12px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.enter:hover{
+    background-color:#a69cc471;
+}
+.products{
+    width: fit-content;
+    border: 1px solid #f7cccc;
+    border-radius: 4px;
+}
+.tab{
+    margin-left: 30px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color: rgb(59, 57, 57);
+}
+.option{
+    margin: 10px auto;
+}
