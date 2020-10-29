@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient
 
 const app = express()
 
-MongoClient.connect('mongodb+srv://swagatika:7dt3Hxuyj3KZ5zPR@cluster0.6w3ly.mongodb.net/API_OnlineStore?retryWrites=true&w=majority', { useUnifiedTopology: true })
+MongoClient.connect('mongodb+srv://swagatika:<password>@cluster0.6w3ly.mongodb.net/your_db_name?retryWrites=true&w=majority', { useUnifiedTopology: true })
   .then((client)=>{
     console.log('Successfully connected to  mongodb atlas..')
     const db = client.db('OnlineStore')
