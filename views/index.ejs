@@ -11,7 +11,7 @@
     <div class="grid">
     <h1>Welcome!!</h1>
 
-    <form action="/product" method="POST">
+    <form method="POST" action="/product">
       <label for="name">Name Of Product:</label>
       <input type="text" placeholder="name.." name="name" /><br>
       <label for="description">Description Of Product:</label>
@@ -20,36 +20,7 @@
       <input type="number" placeholder="price($)" name="price" /><br>
       <button type="submit" class="enter">Submit</button>
     </form>
-  </div>    
-   <section>
-     <h3>Products</h3>
-     <ul class="products">
+  </div>
   
-      <% for(var i = 0; i < product.length; i++) {%>
-        <li class="product">
-          <label for="name" class="tab">Name:</label>
-          <span><%= product[i].name %></span>
-          <label for="price" class="tab">Description:</label>
-          <span><%= product[i].description %></span>
-          <label for="price" class="tab">Price:</label>
-          <span><%= product[i].price %></span>
-          <div class="option">
-          <span>
-            <a href="/product/update/{{this._id}}"  class="tab">
-              <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
-            </a>
-          </span>
-          <span>
-            <a href="/product/delete/{{this.id}}" 
-                onclick="return confirm('Are you sure to delete this product ?');" class="tab" >
-              <i class="fa fa-trash fa-lg" aria-hidden="true"></i>
-            </a>
-          </span>
-        </div>
-        </li>
-        <hr>
-      <% } %>
-    </ul>
-   </section>
   </body>
 </html>
